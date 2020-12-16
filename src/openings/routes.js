@@ -5,9 +5,25 @@ const routes = express.Router({
 });
 
 routes.get('/', (req, res) => {
+
+    let data = [
+        {
+            empresa:"Intera",
+            cargo: "Backend Engeneer",
+            remuneracao: 1800
+        },
+        {
+            empresa:"99Leads",
+            cargo: "Backend Engeneer",
+            remuneracao: 1500
+        }
+    ];
+
     response = {
-        message: "Você está recebendo uma lista de oportunidades!"
+        message: "Você está recebendo uma lista de oportunidades!",
+        data
     };
+    
     res.status("200").json(response);
 });
 
