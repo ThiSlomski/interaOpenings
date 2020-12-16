@@ -5,19 +5,31 @@ const routes = express.Router({
 });
 
 routes.get('/', (req, res) => {
-    res.status("200").json({});
+    response = {
+        message: "Você está recebendo uma lista de oportunidades!"
+    };
+    res.status("200").json(response);
 });
 
 routes.post('/', (req, res) => {
-    res.status("200").json({});
+    response = {
+        message: "Muito obrigado por cadastrar sua vaga conosco!"
+    };
+    res.status("200").json(response);
 });
 
 routes.put('/{id}', (req, res) => {
-    res.status("200").json({});
+    response = {
+        message: "Atualizamos o perfil da vaga."
+    };
+    res.status("200").json(response);
 });
 
 routes.delete('/{id}', (req, res) => {
-    res.status("200").json({});
+    response = {
+        message: "Vaga excluída com sucesso."
+    };
+    res.status("200").json(response);
 });
 
 module.exports= {
