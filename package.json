@@ -1,0 +1,26 @@
+{
+  "name": "interaopenings",
+  "version": "1.0.0",
+  "description": "openings...",
+  "main": "index.js",
+  "scripts": {
+    "test": "run tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiSlomski/interaOpenings.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Microservices",
+    "Serverless",
+    "Express",
+    "NoSQL"
+  ],
+  "author": "Thiago Slomski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThiSlomski/interaOpenings/issues"
+  },
+  "homepage": "https://github.com/ThiSlomski/interaOpenings#readme"
+}
