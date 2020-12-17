@@ -9,7 +9,7 @@ npm install
 ```
 ## Run Localhost
 
- go to "interaTalents/src" and so...
+ go to "interaOpenings/src" and so...
 
 ```bash
 nodemon index.js
