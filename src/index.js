@@ -12,4 +12,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/openings", openingsRoutes);
 
+app.listen(3001, () => {
+    console.info('Listening on port 3001.');
+});
+
 module.exports = app;

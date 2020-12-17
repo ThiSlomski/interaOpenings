@@ -9,12 +9,12 @@ routes.get('/', (req, res) => {
     let data = [
         {
             empresa:"Intera",
-            cargo: "Backend Engeneer",
+            cargo: "Backend Developer",
             remuneracao: 1800
         },
         {
             empresa:"99Leads",
-            cargo: "Backend Engeneer",
+            cargo: "Backend Developer",
             remuneracao: 1500
         }
     ];
@@ -25,6 +25,33 @@ routes.get('/', (req, res) => {
     };
     
     res.status("200").json(response);
+});
+
+routes.get('/{id}', (req, res) => {
+
+    let data = null;
+
+    if(true){
+
+        data = {
+            empresa:"Intera",
+            cargo: "Backend Developer",
+            remuneracao: 1800
+        }
+        response = {
+            message: "Oportunidade encontrada",
+            data
+        };    
+        res.status("200").json(response);
+
+    }
+
+    response = {
+        message: "Oportunidade não encontrada",
+        data
+    };
+    res.status("404").json(response);
+
 });
 
 routes.post('/', (req, res) => {
@@ -38,7 +65,7 @@ routes.put('/{id}', (req, res) => {
     response = {
         message: "Atualizamos o perfil da vaga."
     };
-    res.status("200").json(response);
+    res.status("201").json(response);
 });
 
 routes.delete('/{id}', (req, res) => {
